@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.required_ruby_version = '>= 2.2.2'
 
-  s.author       = 'Spree Commerce'
+  s.author       = 'Spree Commerce, Aaron Lifton'
   s.email        = 'gems@spreecommerce.com'
   s.homepage     = 'http://www.spreecommerce.com'
   s.license      = %q{BSD-3}
@@ -23,9 +23,9 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '>= 3.1.0', '< 4.0'
-  s.add_dependency 'spree_auth_devise', '>= 3.1.0', '< 4.0'
+  s.add_dependency 'spree_auth_devise'
   s.add_dependency 'paypal-sdk-merchant'
-  s.add_dependency 'spree_extension'
+  # s.add_dependency 'spree_extension'
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'capybara-screenshot'

@@ -52,7 +52,7 @@ module Spree
         amount: order.total,
         payment_method: payment_method
       })
-      order.next
+      order.complete # next -> complete
       if order.complete?
         flash.notice = Spree.t(:order_processed_successfully)
         flash[:order_completed] = true
