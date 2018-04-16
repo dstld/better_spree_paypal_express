@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
 
-  s.author       = 'Spree Commerce'
+  s.author       = 'Spree Commerce, Aaron Lifton'
   s.email        = 'gems@spreecommerce.com'
   s.homepage     = 'http://www.spreecommerce.com'
   s.license      = %q{BSD-3}
@@ -22,7 +22,8 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4.0'
+  # s.add_dependency 'spree_core', '~> 2.4.0'
+  s.add_dependency, 'solidus_core', '= 1.0.0'
   s.add_dependency 'paypal-sdk-merchant', '1.106.1'
 
   s.add_development_dependency 'capybara', '~> 2.1'
